@@ -2,7 +2,7 @@ import pyodbc
 
 class ItemDatabase:
     def __init__(self):
-        self.conn = pyodbc.connect('DRIVER={SQL Server};SERVER=BEAST;DATABASE=cafe;')
+        self.conn = pyodbc.connect('DRIVER={SQL Server};SERVER=DESKTOP-F27P7II;DATABASE=cafe;')
         self.cursor = self.conn.cursor()
 
     def get_items(self):
